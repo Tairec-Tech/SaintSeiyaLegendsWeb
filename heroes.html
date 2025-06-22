@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Héroes - Saint Seiya Legends</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cinzel', serif;
+      background: linear-gradient(160deg,
+        #4b0082 10%,
+        #3a0066 35%,
+        #1c1c1c 45%,
+        #444444 55%,
+        #7a5c1f 65%,
+        #a87e00 70%,
+        #8a6e00 80%,
+        #5e4b00 100%
+      );
+      color: #fff;
+      background-blend-mode: multiply;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 40px;
+    }
+    .hero-section {
+      margin-bottom: 60px;
+    }
+    .hero-section h2 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .hero-preview {
+      position: relative;
+      border-radius: 15px;
+      border: 5px solid;
+      overflow: hidden;
+      max-height: 320px;
+    }
+    .hero-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    .hero-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.75);
+      text-align: center;
+    }
+    .hero-overlay h3 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .hero-stars {
+      color: gold;
+      margin-top: 5px;
+    }
+
+    .bronce { background-color: #b87333; border-color: #cd7f32; box-shadow: 0 0 10px #cd7f32; }
+    .plata { background-color: #c0c0c0; border-color: #dcdcdc; box-shadow: 0 0 10px #dcdcdc; }
+    .oro { background-color: #ffd700; border-color: #b8860b; box-shadow: 0 0 10px #ffd700; }
+    .espectros { background-color: #4b0082; border-color: #800080; box-shadow: 0 0 10px #800080; }
+    .dioses { background-color: #e5d9b6; border-color: #ffe7a3; box-shadow: 0 0 10px #ffe7a3; }
+    .asgard { background-color: #999999; border-color: #bbbbbb; box-shadow: 0 0 10px #bbbbbb; }
+    .marinas { background-color: #8b0000; border-color: #ff1a1a; box-shadow: 0 0 10px #ff1a1a; }
+    .ankoku { background-color: #1a1a1a; border-color: #5a5a5a; box-shadow: 0 0 10px #5a5a5a; }
+    .divinos { background-color: #f5f5f5; border-color: #e5e5e5; box-shadow: 0 0 10px #f5f5f5; }
+    .especiales { background-color: #228b22; border-color: #32cd32; box-shadow: 0 0 10px #32cd32; }
+    .cine { background-color: #ff8c00; border-color: #ffae42; box-shadow: 0 0 10px #ffae42; }
+  </style>
+</head>
+<body>
+
+  <!-- Botón de menú -->
+  <button class="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
+    ☰
+  </button>
+
+  <!-- Menú lateral con logo -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
+    <div class="offcanvas-header">
+      <img src="img/logo.png" alt="Saint Seiya Legends">
+    </div>
+    <div class="offcanvas-body">
+      <a href="index.html">Inicio</a>
+      <a href="#guia">Guía</a>
+      <a href="#explora">Explora</a>
+      <a href="heroes.html">Héroes</a>
+      <a href="items.html">Ítems</a>
+      <a href="tierlist.html">Tier List</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="parches.html">Parches</a>
+      <a href="colaboradores.html">Colaboradores</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="text-center mb-5">Héroes de Saint Seiya Legends</h1>
+
+    <!-- Secciones por Rango -->
+
+     <!-- Caballeros de Bronce -->
+    <div class="hero-section">
+      <h2>Caballeros de Bronce</h2>
+      <div class="hero-grid">
+        <div class="hero-preview bronce">
+          <img src="img/heroes/Bronce/Andromeda_Shun_TV.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Shun de Andromeda</h3>
+            <span class="badge bg-dark">Bronce</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview bronce">
+          <img src="img/heroes/Bronce/Ikki3.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Ikki de Fenix</h3>
+            <span class="badge bg-dark">Bronce</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview bronce">
+          <img src="img/heroes/Bronce/Seiya_Toei.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Seiya de Pegaso</h3>
+            <span class="badge bg-dark">Bronce</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview bronce">
+          <img src="img/heroes/Bronce/Hyoga.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Hyoga de Cisne</h3>
+            <span class="badge bg-dark">Bronce</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview bronce">
+          <img src="img/heroes/Bronce/Jabu.webp" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Jabu de Unicornio</h3>
+            <span class="badge bg-dark">Bronce</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview bronce">
+          <img src="img/heroes/Bronce/Docrates.webp" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Docrates de Hydra</h3>
+            <span class="badge bg-dark">Bronce</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Caballeros de Plata -->
+    <div class="hero-section">
+      <h2>Caballeros de Plata</h2>
+      <div class="hero-grid">
+        <div class="hero-preview plata">
+          <img src="img/heroes/Plata/Asterion de Hound.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Asterion de Hound</h3>
+            <span class="badge bg-dark">Plata</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview plata">
+          <img src="img/heroes/Plata/Shaina de Ophiuchus.webp" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Shaina de Ophiuchus</h3>
+            <span class="badge bg-dark">Plata</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview plata">
+          <img src="img/heroes/Plata/Capella-de-Auriga.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Capella de Auriga</h3>
+            <span class="badge bg-dark">Plata</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview plata">
+          <img src="img/heroes/Plata/Orphée de Lyra.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Orphée de Lyra</h3>
+            <span class="badge bg-dark">Plata</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview plata">
+          <img src="img/heroes/Plata/Ptolemy_de_Sagita.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Ptolemy de Sagitta</h3>
+            <span class="badge bg-dark">Plata</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview plata">
+          <img src="img/heroes/Plata/Albiore de Cepheus.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Albiore de Cepheus</h3>
+            <span class="badge bg-dark">Plata</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview plata">
+          <img src="img/heroes/Plata/Suikyō-de-Garuda.png" alt="Seiya">
+          <div class="hero-overlay">
+            <h3>Suikyō de copa</h3>
+            <span class="badge bg-dark">Plata</span>
+            <div class="hero-stars">
+              ★★★☆☆
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Agrega aquí más secciones con los otros 10 rangos -->
+
+  </div>
+</body>
+</html>
